@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('.//assets/bgcover.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.songInfo{
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    left: 30vb;
+    color:white;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1400px) {
+    body{
+        background-color: lightgreen;
+        transition: opacity 0.5s ease-in;
+    }
+    #masterSongName{
+        font-size:small;
+        margin: 20px 10px 100px 10px;
+        transition: opacity 0.5s ease-in;
+    }
+    #masterPlay{
+        margin-top: 50px;
+    }   
+    #gif{
+        /* margin: 5rem 1em; */
+    }
+    .songItem{
+        background-color:thistle;
+        opacity: 0.9;
+        font-size: x-small;
+    }
+    .container{
+        animation-duration: 2s;
+    } 
+}
+
+/* @media screen and (max-width: 800px){
+    body{
+        background-color: darkblue;
+        transition: opacity 0.5s ease-in;
+    }
+    #masterSongName{
+        margin: 20px 10px 100px 10px;
+        transition: opacity 0.5s ease-in;
+    }
+    #masterPlay{
+        margin-top: 0;
+    }
+} */
