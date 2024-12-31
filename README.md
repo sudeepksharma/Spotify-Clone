@@ -25,8 +25,6 @@ FontAwesome: Icons for control buttons.
 How to Run
 Clone the repository to your local machine.
 
-bash
-git clone https://github.com/yourusername/spotify-clone.git
 Navigate to the project directory.
 
 bash
